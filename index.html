@@ -76,7 +76,58 @@
 
   </body>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sélectionnez les éléments nécessaires
+      const screen = document.querySelector('.screen');
+      const buttons = document.querySelectorAll('.button');
+      const buttonClear = document.querySelector('#button-clear');
+      const buttonEqual = document.querySelector('#button-equal');
   
+      // Définissez la fonction pour mettre à jour l'écran
+      const updateScreen = (content) => {
+        screen.textContent = content;
+      };
+  
+      
+  
+     // Ajout événement pour chaque bouton
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // Si le bouton est égal à "="
+        if (button.id === 'button-equal') {
+            try {
+                const result = evaluateExpression(screen.textContent);
+                updateScreen(result);
+            } catch (error) {
+                updateScreen('Error');
+            }
+        } else if (button.id === 'division' || button.id === 'multiplication' || button.id === 'soustraction' || button.id === 'addition') {
+            // Si le bouton est un opérateur, ajoutez le texte du bouton à l'écran et réinitialisez l'écran
+            screen.textContent += button.textContent;
+            updateScreen('');
+        } else {
+            // Sinon, ajoutez le texte du bouton à l'écran
+            screen.textContent += button.textContent;
+        }
+    });
+});
+
+
+            // Événement pour le bouton "C" (Clear)
+            buttonClear.addEventListener('click', () => {
+                updateScreen('');
+            });
+
+            // Fonction d'évaluation de l'expression mathématique
+            const evaluateExpression = (expression) => {
+                return new Function('return ' + expression)();
+            };
+        });
+    
+  </script>
+  
+  </body>
   </html>
   
 
