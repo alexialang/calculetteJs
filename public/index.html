@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <title>calculetteJs</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.8.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.8.0/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-database-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/10.8.0/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.8.0/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <div class="box-calcul">
+      <div class="title-calc">Calcul-3000</div>
+      <div class="screen">ecran</div>
+      <div class="first-ligne row">
+        <button id="on" class="button-on">on</button>
+        <button id="button-clear" class="button">c</button>
+        <button id="" class="button">?</button>
+        <button id="division" class="button">/</button>
+      </div>
+      <div class="second-ligne row">
+        <button id="seven" class="button">7</button>
+        <button id="height" class="button">8</button>
+        <button id="nine" class="button">9</button>
+        <button class="button">%</button>
+      </div>
+      <div class="third-ligne row">
+        <button id="four" class="button">4</button>
+        <button id="five" class="button">5</button>
+        <button id="percentage" class="button">6</button>
+        <button id="multiplication" class="button">X</button>
+      </div>
+      <div class="fourth-ligne row">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button id="soustraction" class="button">-</button>
+      </div>
+      <div class="fifth-ligne row">
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button id="button-equal" class="button">=</button>
+        <button id="addition" class="button-add">+</button>
+      </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
