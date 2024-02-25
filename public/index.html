@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
       rel="stylesheet"
     />
-    <title>calculetteJs</title>
+    <title>calculettejs</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.8.0/firebase-app-compat.js"></script>
@@ -54,36 +54,36 @@
   <body>
     <div class="box-calcul">
       <div class="title-calc">Calcul-3000</div>
-      <div class="screen">ecran</div>
+      <div class="screen"></div>
       <div class="first-ligne row">
-        <button id="on" class="button-on">on</button>
-        <button id="button-clear" class="button">c</button>
-        <button id="" class="button">?</button>
-        <button id="division" class="button">/</button>
+        <button data-key="8" class="button-clear">c</button>
+        <button data-key="53" class="button mainButton">(</button>
+        <button data-key="219" class="button mainButton">)</button>
+        <button data-key="111" class="button mainButton">/</button>
       </div>
       <div class="second-ligne row">
-        <button id="seven" class="button">7</button>
-        <button id="height" class="button">8</button>
-        <button id="nine" class="button">9</button>
-        <button class="button">%</button>
+        <button data-key="103" class="button mainButton">7</button>
+        <button data-key="104" class="button mainButton">8</button>
+        <button data-key="105" class="button mainButton">9</button>
+        <button data-key="" class="button mainButton">%</button>
       </div>
       <div class="third-ligne row">
-        <button id="four" class="button">4</button>
-        <button id="five" class="button">5</button>
-        <button id="percentage" class="button">6</button>
-        <button id="multiplication" class="button">X</button>
+        <button data-key="100" class="button mainButton">4</button>
+        <button data-key="101" class="button mainButton">5</button>
+        <button data-key="102" class="button mainButton">6</button>
+        <button data-key="106" class="button mainButton">*</button>
       </div>
       <div class="fourth-ligne row">
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button id="soustraction" class="button">-</button>
+        <button data-key="97" class="button mainButton">1</button>
+        <button data-key="98" class="button mainButton">2</button>
+        <button data-key="99" class="button mainButton">3</button>
+        <button data-key="109" class="button mainButton">-</button>
       </div>
       <div class="fifth-ligne row">
-        <button class="button">0</button>
-        <button class="button">.</button>
-        <button id="button-equal" class="button">=</button>
-        <button id="addition" class="button-add">+</button>
+        <button data-key="96" class="button mainButton">0</button>
+        <button data-key="110" class="button mainButton">.</button>
+        <button data-key="13" class="button button-result">=</button>
+        <button data-key="107" class="button mainButton">+</button>
       </div>
     </div>
 
@@ -110,6 +110,6 @@
       <span></span>
       <span></span>
     </div>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
